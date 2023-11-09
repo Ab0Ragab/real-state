@@ -1,0 +1,53 @@
+@import "../../../../styles/global.scss";
+
+.home {
+  &-header {
+    min-height: 100vh;
+    background: url(../../../../../public/images/header-bg.png) no-repeat center;
+    background-size: cover;
+    &-title {
+      @include font-size(75.68px);
+      font-weight: bold;
+    }
+    &-search {
+      position: relative;
+      &-icon {
+        position: absolute;
+        top: 27px;
+        inset-inline-start: rem(13px);
+        background: $white;
+        padding-inline-start: rem(5px);
+        svg {
+          font-size: 1.3em;
+        }
+      }
+      &-input {
+        text-indent: 35px;
+        height: 84px;
+        padding-inline-end: rem(192px);
+        @include font-size(22px);
+        @include media-breakpoint-down(md) {
+          @include font-size(18px);
+        }
+        @include media-breakpoint-down(sm) {
+          padding-inline-end: rem(27px);
+        }
+      }
+      &-btn {
+        position: absolute;
+        width: max-content;
+        top: 17px;
+        inset-inline-end: 20px;
+        padding: rem(10px) rem(28px);
+        @include media-breakpoint-down(sm) {
+          @include font-size(18px);
+          display: inline;
+          position: unset;
+          margin-top: rem(12px);
+          background-color: $primary !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

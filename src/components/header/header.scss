@@ -1,0 +1,32 @@
+@import "../../styles/global.scss";
+
+.header {
+  &-links .nav .nav-item .nav-link,
+  &-menu-links .list-group .list-group-item {
+    cursor: pointer;
+    @include font-size(21.62px);
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $primary;
+    }
+  }
+  &-menu-links .list-group .list-group-item {
+    margin-bottom: rem(20px);
+    &:hover {
+      border-color: transparent;
+      color: $primary;
+    }
+  }
+  &-logo {
+    cursor: pointer;
+    svg {
+      font-size: 6em;
+    }
+  }
+  &-menu-buttons {
+    position: absolute;
+    inset-inline-end: 15px;
+    inset-inline-start: 15px;
+    inset-block-end: 20px;
+  }
+}

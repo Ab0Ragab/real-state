@@ -1,0 +1,40 @@
+@use "sass:math";
+
+// Colors
+$primary: #97125f;
+$secondary: #00b33c;
+$nav-link-color: #2d2c2c;
+$nav-link-hover-color: $primary;
+$div-bg: #f5fff9;
+$green: #1b7a43;
+
+@function rem($size) {
+  @return math.div($size, 16px) * 1rem;
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.3em;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($primary, 0.5);
+    outline: 0 solid $gray-400;
+    border-radius: 20em;
+
+    &:hover {
+      background: rgba($primary, 0.8);
+    }
+  }
+}
+
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";

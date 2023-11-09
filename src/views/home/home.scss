@@ -1,0 +1,39 @@
+@import "../../styles/global.scss";
+
+.help {
+  background-color: $div-bg;
+  &-card {
+    padding: rem(30px);
+    border-radius: rem(10.811px);
+    background: $white;
+    box-shadow: 0px 10.81111px 21.62222px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: rem(25px);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: $primary;
+      color: $white;
+      cursor: text;
+      box-shadow: rgba(151, 18, 96, 0.404) -8px 8px,
+        rgba(151, 18, 96, 0.384) -18px 18px;
+    }
+    &-icon svg {
+      font-size: 5em;
+      margin-bottom: rem(20px);
+    }
+    &-title {
+      @include font-size(32.433px);
+      font-weight: 700;
+      margin-bottom: rem(20px);
+      white-space: nowrap;
+    }
+    &-describtion {
+      @include font-size(18.919px);
+      font-weight: 400;
+      line-height: rem(29.325px);
+    }
+  }
+}
+
+.news {
+  background-color: $div-bg;
+}

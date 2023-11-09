@@ -1,0 +1,61 @@
+@import "../../styles/global.scss";
+
+.secondary-card {
+  border-radius: rem(10.811px);
+  background: $white;
+  box-shadow: 0px 2.70278px 5.40556px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: rem(20px);
+  &-header,
+  &-btn {
+    transition: all 0.3s ease-in-out;
+  }
+  &-body {
+    padding: rem(25px);
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: rem(10px);
+    }
+    &-category {
+      color: $secondary;
+      background: rgba(0, 179, 60, 0.1);
+      @include font-size(18.919px);
+      font-weight: 600;
+      display: inline-block;
+      padding: rem(5.406px) rem(10.811px);
+    }
+    &-time {
+      @include font-size(18.919px);
+      font-weight: 600;
+    }
+    &-title {
+      @include font-size(32.433px);
+      font-weight: 700;
+      margin-top: rem(10px);
+    }
+    &-desc,
+    &-btn {
+      margin-top: rem(10px);
+      @include font-size(21.622px);
+    }
+    &-btn {
+      color: $green;
+      display: flex;
+      gap: 5px;
+      cursor: pointer;
+      margin: rem(15px) 0;
+      padding-top: rem(15px);
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &:hover {
+    .secondary-card-header {
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+  }
+}

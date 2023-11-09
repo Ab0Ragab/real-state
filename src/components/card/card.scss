@@ -1,0 +1,90 @@
+@import "../../styles/global.scss";
+
+.card {
+  border-radius: rem(8.108px);
+  background: $white;
+  box-shadow: 0px 10.81111px 21.62222px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: rem(25px);
+  &-header {
+    padding: rem(12px);
+    transition: all 0.3s ease-in-out;
+  }
+  &-body {
+    margin-top: rem(20px);
+    padding: 0 rem(20px);
+    &-price {
+      color: $secondary;
+      @include font-size(32px);
+      font-weight: 700;
+      margin-inline-end: rem(10px);
+    }
+    &-time {
+      color: rgb(118, 117, 117);
+      @include font-size(18.919px);
+    }
+    &-react svg {
+      cursor: pointer;
+      font-size: 2.2em;
+    }
+    &-title {
+      @include font-size(27.028px);
+      font-weight: 600;
+      margin: rem(15px) 0;
+    }
+    &-location {
+      @include font-size(18.919px);
+      gap: 9px;
+    }
+    &-features {
+      margin: rem(15px) 0;
+      @include font-size(18.919px);
+      color: rgb(118, 117, 117);
+      gap: 10px;
+      svg {
+        width: 1.4em;
+        margin-inline-end: rem(5px);
+      }
+    }
+  }
+  &-footer {
+    border-top: 0.676px solid rgba(0, 0, 0, 0.1);
+    margin-top: rem(20px);
+    padding: rem(20px);
+    &-user {
+      grid-row-gap: 15px;
+      &-info {
+        gap: 15px;
+        &-avatar {
+          img {
+            border: 1.3px solid $secondary;
+            width: rem(75.678px);
+            height: rem(75.678px);
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center right;
+          }
+        }
+        &-name {
+          @include font-size(24.325px);
+        }
+        &-job {
+          @include font-size(18.919px);
+          color: rgb(118, 117, 117);
+        }
+      }
+      &-contact {
+        gap: 15px;
+        svg {
+          cursor: pointer;
+          width: 2.8em;
+        }
+      }
+    }
+  }
+  &:hover {
+    .card-header {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+  }
+}

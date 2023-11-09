@@ -1,0 +1,24 @@
+@import "../../styles/global.scss";
+
+.filter {
+  background-color: $div-bg;
+  overflow-y: auto;
+  &-item {
+    transition: all 0.3s ease-in-out;
+    @include font-size(18px);
+    gap: rem(14px);
+    &-type {
+      @include font-size(20px);
+      font-weight: 600;
+    }
+    &-icon svg {
+      width: 1.2em;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  @include scrollBar;
+}
