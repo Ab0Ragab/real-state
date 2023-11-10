@@ -1,0 +1,58 @@
+@import "../../styles/global.scss";
+
+.footer {
+  &-logo {
+    margin-bottom: rem(25px);
+    cursor: pointer;
+    svg {
+      width: 5.2em;
+    }
+  }
+  &-title {
+    @include font-size(24.325px);
+    font-weight: 500;
+    margin-bottom: rem(20px);
+  }
+  &-link {
+    color: rgba(40, 42, 46, 0.6);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  &-info {
+    margin-bottom: rem(25px);
+  }
+  &-info,
+  &-link,
+  &-copy-right {
+    @include font-size(18.919px);
+  }
+  &-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: rem(15px);
+    &-icon {
+      svg {
+        width: 1.5em;
+      }
+    }
+    &-text {
+      color: rgb(120, 120, 120);
+      @include font-size(18.919px);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        color: $secondary;
+      }
+    }
+  }
+  &-copy-right {
+    background-color: rgb(245, 245, 245);
+    color: rgb(120, 120, 120);
+    text-align: center;
+    padding: rem(20px) 0;
+  }
+}
