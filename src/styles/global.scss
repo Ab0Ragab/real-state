@@ -6,7 +6,7 @@ $secondary: #00b33c;
 $nav-link-color: #2d2c2c;
 $nav-link-hover-color: $primary;
 $div-bg: #f5fff9;
-$green: #1b7a43;
+$success: #1b7a43;
 
 @function rem($size) {
   @return math.div($size, 16px) * 1rem;

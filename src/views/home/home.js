@@ -2,6 +2,7 @@ import HomeHeader from "./components/home-header/home-header";
 import HomeLocations from "./components/home-locations/home-locations";
 import Filter from "../../components/filter/filter";
 import Card from "../../components/card/card";
+import Image from "../../components/image/image";
 import SecondaryCardCard from "../../components/secondary-card/secondary-card";
 import { ReactSVG } from "react-svg";
 import React, { useRef } from "react";
@@ -194,6 +195,36 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="pt-5 pb-5">
+        <div className="container">
+          <div className="row pt-4 gx-5">
+            <div className="col-md-5 col-12">
+              <Image
+                image="images/address.png"
+                ratio={605 / 879}
+                alt="address"
+              />
+            </div>
+            <div className="col-md-6 col-12 pt-5">
+              <h2>
+                See What Local <span className="text-success">Agents</span>{" "}
+                Think Your <span className="text-success">Home</span> is Worth
+              </h2>
+              <p className="mt-3 mb-4">
+                See what local agents think your home is worth
+              </p>
+              <button type="button" className="btn btn-outline-success btn-lg">
+                Agent Valuation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pt-5 pb-5">
+        <div className="container">
+          <div className="row pt-4 gx-5"></div>
         </div>
       </div>
     </>

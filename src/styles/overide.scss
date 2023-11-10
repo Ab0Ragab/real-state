@@ -46,7 +46,7 @@ P {
   width: 10px;
   height: 10px;
   &-active {
-    background-color: $green;
+    background-color: $success;
   }
 }
 
@@ -60,11 +60,11 @@ P {
   align-items: center;
   justify-content: center;
   outline: none;
-  border: 1.351px solid $green;
-  color: $green;
+  border: 1.351px solid $success;
+  color: $success;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: $green;
+    background-color: $success;
     color: $white;
   }
   &:first-of-type {
