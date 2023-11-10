@@ -37,3 +37,11 @@
 .news {
   background-color: $div-bg;
 }
+
+.newsletter {
+  background-color: rgb(247, 250, 252);
+  &-desc {
+    color: rgba(40, 42, 46, 0.6);
+    @include font-size(18.919px);
+  }
+}

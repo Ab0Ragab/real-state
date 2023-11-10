@@ -45,11 +45,6 @@ function Footer() {
               </p>
               <p>
                 <a href="#!" className="footer-link">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="footer-link">
                   Our Apart
                 </a>
               </p>

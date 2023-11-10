@@ -2,6 +2,7 @@ import HomeHeader from "./components/home-header/home-header";
 import HomeLocations from "./components/home-locations/home-locations";
 import Filter from "../../components/filter/filter";
 import Card from "../../components/card/card";
+import Search from "../../components/search/search";
 import Image from "../../components/image/image";
 import SecondaryCardCard from "../../components/secondary-card/secondary-card";
 import { ReactSVG } from "react-svg";
@@ -78,7 +79,7 @@ function Home() {
       <HomeHeader />
       <div className="help pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-5">
+          <div className="row gx-5">
             <div className="col-md-12 mb-4">
               <h2 className="help-title">See How We Can Help</h2>
               <p>Let’s find a home that’s perfect for you</p>
@@ -101,7 +102,7 @@ function Home() {
       </div>
       <div className="list pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-4">
+          <div className="row gx-4">
             <div className="col-md-12 mb-4">
               <div className="d-md-flex d-block justify-content-between align-items-center">
                 <div>
@@ -129,7 +130,7 @@ function Home() {
       <HomeLocations />
       <div className="homes pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-4">
+          <div className="row gx-4">
             <div className="col-md-12 mb-4">
               <div className="d-md-flex d-block justify-content-between align-items-center">
                 <div>
@@ -156,7 +157,7 @@ function Home() {
       </div>
       <div className="news pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-5">
+          <div className="row gx-5">
             <div className="col-md-12 mb-4">
               <h2 className="news-title">Latest Commercial Property News</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -199,7 +200,7 @@ function Home() {
       </div>
       <div className="pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-5">
+          <div className="row gx-5">
             <div className="col-md-5 col-12">
               <Image
                 image="images/address.png"
@@ -222,9 +223,25 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-5 pb-5">
+      <div className="newsletter pt-5 pb-5">
         <div className="container">
-          <div className="row pt-4 gx-5"></div>
+          <div className="row justify-content-center text-center">
+            <div className="col-xl-7 col-lg-10 col-12">
+              <h2>Subscribe To Our Newsletter</h2>
+              <p className="newsletter-desc mt-3 mb-4">
+                Get update information about update and get latest news
+              </p>
+            </div>
+          </div>
+          <div className="row justify-content-center text-center">
+            <div className="col-xl-6 col-lg-9 col-11">
+              <Search
+                icon="icons/mail.svg"
+                placeholder="Enter your email address"
+                text="Send Now"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

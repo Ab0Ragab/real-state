@@ -1,5 +1,4 @@
-import { ReactSVG } from "react-svg";
-
+import Search from "../../../../components/search/search";
 import "./home-header.scss";
 
 function HomeHeader() {
@@ -11,20 +10,11 @@ function HomeHeader() {
             <h1 className="home-header-title">
               Build Grow And Manage Your Brand
             </h1>
-            <div className="home-header-search mt-4">
-              <ReactSVG
-                src="icons/search.svg"
-                className="home-header-search-icon"
-              />
-              <input
-                type="text"
-                placeholder="Search City, Adress, or Country"
-                className="home-header-search-input"
-              />
-              <button className="btn btn-lg btn-outline-primary home-header-search-btn">
-                Search Now
-              </button>
-            </div>
+            <Search
+              icon="icons/search.svg"
+              placeholder="Search City, Adress, or Country"
+              text="Search Now"
+            />
           </div>
         </div>
       </div>

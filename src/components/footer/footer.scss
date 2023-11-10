@@ -1,6 +1,7 @@
 @import "../../styles/global.scss";
 
 .footer {
+  padding-top: rem(30px);
   &-logo {
     margin-bottom: rem(25px);
     cursor: pointer;
@@ -12,6 +13,7 @@
     @include font-size(24.325px);
     font-weight: 500;
     margin-bottom: rem(20px);
+    white-space: nowrap;
   }
   &-link {
     color: rgba(40, 42, 46, 0.6);

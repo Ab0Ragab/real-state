@@ -1,0 +1,52 @@
+@import "../../styles/global.scss";
+
+.search {
+  position: relative;
+  height: 84px;
+
+  &-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    inset-inline-start: rem(13px);
+    background: $white;
+    padding-inline-start: rem(5px);
+    svg {
+      font-size: 1.3em;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-inline-start: 0;
+      inset-inline-start: rem(9px);
+    }
+  }
+  &-input {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(5.406px);
+    text-indent: 45px;
+    padding-inline-end: rem(192px);
+    border: 1px solid transparent;
+    outline-color: $primary;
+    @include font-size(22px);
+    @include media-breakpoint-down(md) {
+      @include font-size(18px);
+    }
+    @include media-breakpoint-down(sm) {
+      padding-inline-end: rem(112px);
+      text-indent: 33px;
+      @include font-size(11.5px);
+    }
+  }
+  &-btn {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: 20px;
+    padding: rem(10px) rem(28px);
+    @include media-breakpoint-down(sm) {
+      inset-inline-end: 8px;
+      font-size: rem(12px) !important;
+    }
+  }
+}
