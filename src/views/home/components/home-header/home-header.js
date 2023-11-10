@@ -19,7 +19,7 @@ function HomeHeader() {
               <input
                 type="text"
                 placeholder="Search City, Adress, or Country"
-                className="home-header-search-input form-control"
+                className="home-header-search-input"
               />
               <button className="btn btn-lg btn-outline-primary home-header-search-btn">
                 Search Now
