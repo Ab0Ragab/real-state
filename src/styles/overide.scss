@@ -75,3 +75,10 @@ P {
 .img-fluid {
   width: 100%;
 }
+
+.offcanvas {
+  max-width: 80%;
+  &-backdrop {
+    cursor: pointer;
+  }
+}

@@ -83,7 +83,7 @@ function HomeLocations() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="d-flex mt-4">
+            <div className="d-flex align-items-center mt-4">
               <div className="swiper-custom-pagination" />
               <button
                 type="button"

@@ -177,7 +177,7 @@ function Home() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <div className="d-flex mt-4">
+              <div className="d-flex align-items-center mt-4">
                 <div className="pagination" />
                 <button
                   type="button"
