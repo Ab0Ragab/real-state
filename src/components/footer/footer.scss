@@ -16,7 +16,7 @@
     white-space: nowrap;
   }
   &-link {
-    color: rgba(40, 42, 46, 0.6);
+    color: $dark;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     &:hover {
@@ -52,7 +52,7 @@
     }
   }
   &-copy-right {
-    background-color: rgb(245, 245, 245);
+    background-color: $light;
     color: rgb(120, 120, 120);
     text-align: center;
     padding: rem(20px) 0;

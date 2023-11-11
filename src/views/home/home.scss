@@ -1,7 +1,6 @@
 @import "../../styles/global.scss";
 
 .help {
-  background-color: $div-bg;
   &-card {
     padding: rem(30px);
     border-radius: rem(10.811px);
@@ -34,15 +33,16 @@
   }
 }
 
+.help,
 .news,
 .rates {
   background-color: $div-bg;
 }
 
 .newsletter {
-  background-color: rgb(247, 250, 252);
+  background-color: $info;
   &-desc {
-    color: rgba(40, 42, 46, 0.6);
+    color: $dark;
     @include font-size(18.919px);
   }
 }
