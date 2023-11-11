@@ -4,4 +4,40 @@
   border-radius: rem(8.108px);
   background: $white;
   box-shadow: 0px 0px 10.81111px 0px rgba(0, 0, 0, 0.15);
+  padding: rem(43.244px);
+  margin: rem(5px) 0;
+  &-stars {
+    display: flex;
+    gap: 10px;
+    margin-bottom: rem(25px);
+    svg {
+      width: 1.7em;
+    }
+  }
+  &-desc {
+    @include font-size(21.622px);
+  }
+  &-user {
+    grid-row-gap: 15px;
+    margin-top: rem(20px);
+    &-info {
+      gap: 15px;
+      &-avatar {
+        img {
+          width: rem(75.678px);
+          height: rem(75.678px);
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center right;
+        }
+      }
+      &-name {
+        @include font-size(24.325px);
+      }
+      &-job {
+        @include font-size(18.919px);
+        color: rgb(118, 117, 117);
+      }
+    }
+  }
 }

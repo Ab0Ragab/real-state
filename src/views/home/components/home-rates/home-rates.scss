@@ -1,0 +1,11 @@
+.rates {
+  position: relative;
+  &-slider-btn {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+}
