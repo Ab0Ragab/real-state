@@ -1,5 +1,6 @@
 import HomeHeader from "./components/home-header/home-header";
 import HomeLocations from "./components/home-locations/home-locations";
+import HomeRates from "./components/home-rates/home-rates";
 import Filter from "../../components/filter/filter";
 import Card from "../../components/card/card";
 import Search from "../../components/search/search";
@@ -220,6 +221,14 @@ function Home() {
                 Agent Valuation
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="rates pt-5 pb-5">
+        <div className="container">
+          <div className="row">
+            <h2 className="mt-2 mb-5">Clients Says</h2>
+            <HomeRates />
           </div>
         </div>
       </div>
